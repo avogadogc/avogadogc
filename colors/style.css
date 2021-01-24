@@ -4,4 +4,5 @@ td {
 
 table {
   border-collapse: collapse;
+  display: inline-block;
 }
