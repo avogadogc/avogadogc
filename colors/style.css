@@ -1,8 +1,36 @@
-td {
-    width: 1.3em;
-}
-
-table {
+table, body>div {
   border-collapse: collapse;
   display: inline-block;
+  font-family: Verdana, Arial;
+}
+
+/* Hide the first dummy table row */
+td:only-child {
+  display: none;
+}
+
+td {
+    width: 1.3em;
+    text-align: center;
+}
+
+tr:nth-child(2) td:nth-child(1) {
+  font-weight: bold;
+}
+
+td.not-a-day {
+  background-color: lightgray;
+}
+
+td.missing {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.mystery td.missing {
+  background-image: url('https://project-gc.com/images/gc-icons/unknown_16.gif');
+}
+
+div.multi td.missing {
+  background-image: url('https://project-gc.com/images/gc-icons/multi_16.gif');
 }
